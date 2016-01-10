@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>    <!--exercice consigne de base-->
+  <h1><center>FLEXBOX</center></h1>
+  <h1>La mise en page avec flexbox</h1>
+  <p>Consigne : définir un bloc avec à l'intérieur 3 éléments (un rose, jaune, bleu)</p>
+  <div id="container">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <p>Par défaut les blocs se placent les uns sous les autres.</p>
+  </div>
+<div id="aside">
+  <h3>Display:flex</h3>
+  <p>Les blocs se placent par défaut côte à côte.</p>
+  <div id="container1">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h2>Flex-direction</h2>
+  <p>Permets d'agencer ses éléments dans le sens que l'on veut.</p>
+  <h3>Flex-direction: row</h3>
+  <p>Les blocs s'organisent sur une ligne.</p>
+  <div id="container2">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Flex-direction: column</h3>
+  <p>Les blocs s'organisent sur une colonne.</p>
+  <div id="container3">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Flex-direction: row-reverse</h3>
+  <p>Les blocs s'organisent sur une ligne mais en ordre inversé.</p>
+  <div id="container4">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Flex-direction: column-reverse</h3>
+  <p>Les blocs s'organisent sur une colonne mais en ordre inversé.</p>
+  <div id="container5">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+
+  <h2>Flex-wrap : Le retour à la ligne</h2>
+  <h3>Flex-wrap: nowrap</h3>
+  <p>Pas de retour à la ligne (par défaut).</p>
+  <div id="container6">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Flex-wrap: wrap</h3>
+  <p>Les éléments vont à la ligne lorsqu'il n'y a plus la place.</p>
+  <div id="container7">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Flex-wrap: wrap-reverse</h3>
+  <p>Les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse.</p>
+  <div id="container8">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+
+  <h2>Justify-content</h2>
+  <p>Permet d'aligner mes blocs dans le container placés horizontalement sur l'axe principal.</p>
+  <h3>Justify-content: flex-start</h3>
+  <p>Permet d'aligner les blocs au début dans le container (par défaut).</p>
+  <div id="container9">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Justify-content: flex-end</h3>
+  <p>Permet d'aligner les blocs à la fin dans le container.</p>
+  <div id="container10">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Justify-content: center</h3>
+  <p>Permet d'étirés les éléments sur tout l'axe (il y a de l'espace entre eux).</p>
+  <div id="container11">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Justify-content: space-between</h3>
+  <p>Permet d'étirés les éléments sur tout l'axe (il y a de l'espace entre eux).</p>
+  <div id="container12">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Justify-content: space-around</h3>
+  <p>Permet d'étirés les éléments sur tout l'axe (il y a de l'espace entre eux)
+    mais ils laissent aussi de l'espace sur les extrémités.</p>
+  <div id="container13">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+
+  <h2>Align-items</h2>
+  <p>Permet d'aligner mes blocs dans le container placés verticalement sur l'axe
+    secondaire mais généralement le align-items fonctionnent avec le justify-content(axe principale à définir).</p>
+  <h3>Align-items: strech</h3>
+  <p>Permet d'étirer les blocs sur l'axe (par défaut) dans le container.</p>
+  <div id="container14">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Align-items: flex-start</h3>
+  <p>Permet d'aligner les blocs au début dans le container.</p>
+  <div id="container15">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Align-items: flex-end</h3>
+  <p>Permet d'aligner les blocs à la fin dans le container.</p>
+  <div id="container16">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Align-items: center</h3>
+  <p>Permet d'aligner les blocs au centre dans le container.</p>
+  <div id="container17">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+  <h3>Align-items: baseline</h3>
+  <p>Permet d'aligner les blocs sur la ligne de base comme flex-start.</p>
+  <div id="container18">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+
+
+  <h3>Align-self:</h3>
+  <p>Permet d'aligner un seul bloc sur 3 sur l'axe secondaire .</p>
+  <div id="container19">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+  </div>
+
+<div id="aside1">
+  <h2>Align-content:</h2>
+  <p>Avec plusieurs lignes on peut choisir comment les répartir.</p>
+  <h3>Align-self: flex-start</h3>
+  <p>Elements placés au début.</p>
+  <div id="container20">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+  <h3>Align-self: flex-end</h3>
+  <p>Elements placés à la fin.</p>
+  <div id="container21">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+  <h3>Align-self: center</h3>
+  <p>Elements placés au center.</p>
+  <div id="container22">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+  <h3>Align-self: space-between</h3>
+  <p>Elements sont séparés avec de l'espace entre eux.</p>
+  <div id="container23">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+  <h3>Align-self: space-around</h3>
+  <p>Elements sont séparés avec de l'espace entre eux
+     mais il y a aussi de l'espace au début et à la fin.</p>
+  <div id="container24">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+  <h3>Align-self: stretch</h3>
+  <p>Elements s'étirent pour occuper tout l'espace.</p>
+  <div id="container25">
+    <div class="element">Element1</div>
+    <div class="element">Element2</div>
+    <div class="element">Element3</div>
+    <div class="element">Element4</div>
+    <div class="element">Element5</div>
+    <div class="element">Element6</div>
+    <div class="element">Element7</div>
+    <div class="element">Element8</div>
+    <div class="element">Element9</div>
+    <div class="element">Element10</div>
+    <div class="element">Element11</div>
+    <div class="element">Element12</div>
+  </div>
+</div>
+<h3>Order: Permet de changer l'ordre des éléments</h3>
+<p>la syntaxe :</p>
+<ul>
+  <p>#conteneur &nbsp{&nbsp display: flex;  &nbsp  }</p>
+  <li>element:nth-child(1) &nbsp{ &nbsp  order: 3; &nbsp  }</li>
+  <li>element:nth-child(2) &nbsp { &nbsp  order: 1; &nbsp  }</li>
+  <li>element:nth-child(3) &nbsp { &nbsp  order: 2; &nbsp  }</li>
+</ul>
+
+<h3>Flex: Permet de définir la taille</h3>
+<ul>
+  <li>Capacité à grossir :</li><p>flex-grow: 2;</p>
+  <li>Capacité à maigrir :</li><p>flex-shrink: 3;</p>
+  <li>Taille par défaut :</li><p>flex-basis: 100px;</p>
+</ul>
+<h2>En résumé:</h2>
+<ul>
+<li>Il existe plusieurs techniques pour positionner les blocs sur la page.</li>
+<li>Le principe de Flexbox est d'avoir un conteneur, avec plusieurs éléments à l'intérieur.
+  Avec display: flex; sur le conteneur, les éléments à l'intérieur sont agencés en mode Flexbox
+  (horizontalement par défaut).</li>
+<li>Flexbox peut gérer toutes les directions. Avec flex-direction, on peut indiquer si les éléments sont
+  agencés horizontalement (par  défaut) ou verticalement. Cela définit ce qu'on appelle l'axe principal.</li>
+<li>L'alignement des éléments se fait sur l'axe principal avec justify-content , et sur l'axe secondaire
+  avec align-items.</li>
+<li>Avec flex-wrap, on peut autoriser les éléments à revenir à la ligne s'ils n'ont plus d'espace.</li>
+<li>S'il y a plusieurs lignes, on peut indiquer comment les lignes doivent se répartir entre elles
+  avec align-content.</li>
+<li>Chaque élément peut être réagencé en CSS avec order.</li>
+<li>Avec la super-propriété flex, on peut autoriser nos éléments à occuper plus ou moins d'espace restant.</li>
+
+</div>
+</body>
+</html>
